@@ -64,7 +64,6 @@ const images = [
   },
 ];
 
-// 1. Створення розмітки для галереї
 const galleryContainer = document.querySelector('.gallery');
 
 const galleryMarkup = images
@@ -86,7 +85,6 @@ const galleryMarkup = images
 
 galleryContainer.innerHTML = galleryMarkup;
 
-// 2. Прослуховування подій та делегування
 galleryContainer.addEventListener('click', onGalleryClick);
 
 function onGalleryClick(event) {
@@ -97,14 +95,12 @@ function onGalleryClick(event) {
 
   const largeImageURL = event.target.dataset.source;
 
-  // 3. Ініціалізація модального вікна
   const instance = basicLightbox.create(`
     <img src="${largeImageURL}" alt="${event.target.alt}" />
   `);
 
   instance.show();
 
-  // Закриття модального вікна при натисканні Escape
   document.addEventListener('keydown', function onEscPress(event) {
     if (event.key === 'Escape') {
       instance.close();
