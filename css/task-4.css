@@ -1,0 +1,64 @@
+/* Основной контейнер */
+.form-container {
+  width: 400px; /* Ширина формы */
+  margin: 50px auto; /* Центрирование по горизонтали */
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили формы */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Отступы между группами */
+}
+
+/* Группа для label и input */
+.form-group {
+  display: flex;
+  flex-direction: column; /* Размещаем label над input */
+  gap: 5px; /* Небольшой отступ между текстом и полем */
+}
+
+/* Текст label */
+label {
+  font-size: 14px;
+  color: #333333;
+}
+
+/* Поля ввода */
+input {
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+/* Кнопка */
+button {
+  width: 100px;
+  height: 40px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
